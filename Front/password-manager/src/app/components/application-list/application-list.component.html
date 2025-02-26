@@ -1,1 +1,26 @@
-<p>application-list works!</p>
+<div class="application-list">
+    <h2>Liste des applications</h2>
+
+    <table *ngIf="applications.length > 0; else noApplication">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let application of applications">
+          <td>{{ application.name }}</td>
+          <td>{{ application.type }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #noApplication>
+      <p>Aucune application enregistrée.</p>
+    </ng-template>
+
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+</div>
