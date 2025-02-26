@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\WebApp\\WebApp\\WebApp.csproj": {}
+    "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\WebApp\\WebApp\\WebApp.csproj": {
+    "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\WebApp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\WebApp\\WebApp\\WebApp.csproj",
+        "projectPath": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\Laureline\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\WebApp\\WebApp\\obj\\",
+        "outputPath": "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
