@@ -8,6 +8,7 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
+  private apiKey = "ApiKey";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -17,7 +18,8 @@ export class ApiService {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
         'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache'
+        'Pragma': 'no-cache',
+        "ApiKey": this.apiKey
       })
     };
 
@@ -31,7 +33,8 @@ export class ApiService {
   post(url: string, model: any): Observable<any> {
     const httpOptions = {
       headers: new HttpHeaders({
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "ApiKey": this.apiKey
       })
     };
 
@@ -45,7 +48,8 @@ export class ApiService {
   delete(url: string): Observable<any> {
     const httpOptions = {
       headers: new HttpHeaders({
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        "ApiKey": this.apiKey
       })
     };
 
