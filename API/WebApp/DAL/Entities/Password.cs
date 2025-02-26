@@ -7,6 +7,7 @@
         /// Contient le mot de passe chiffré.
         /// </summary>
         public string Value { get; set; } = string.Empty;
+        public string NomCompte {  get; set; } = string.Empty;
         public int ApplicationId { get; set; }
         public Application? Application { get; set; }
     }
