@@ -48,13 +48,13 @@ namespace BLL.Services
             };
         }
 
-        public async Task<PasswordDto?> AddPasswordAsync(PasswordDto password)
+        public async Task<PasswordDto?> AddPasswordAsync(PasswordDto passwordDto)
         {
             var newPassword = new Password
             {
-                Value = password.Value,
-                NomCompte = password.NomCompte,
-                ApplicationId = password.ApplicationId,
+                Value = passwordDto.Value,
+                NomCompte = passwordDto.NomCompte,
+                ApplicationId = passwordDto.ApplicationId,
             };
 
             var createdPassword = await _passwordRepository.AddAsync(newPassword);

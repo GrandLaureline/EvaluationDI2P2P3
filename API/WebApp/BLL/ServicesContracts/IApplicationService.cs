@@ -1,11 +1,11 @@
-﻿using DAL.Entities;
+﻿using BLL.DTOs;
 
 namespace BLL.ServicesContracts
 {
     public interface IApplicationService
     {
-        Task<IEnumerable<Application>> GetApplicationsAsync();
+        Task<IEnumerable<ApplicationDto>> GetApplicationsAsync();
 
-        Task<Application?> AddApplicationAsync(Application appDto);
+        Task<ApplicationDto?> AddApplicationAsync(ApplicationDto appDto);
     }
 }

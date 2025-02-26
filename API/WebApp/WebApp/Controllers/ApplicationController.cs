@@ -1,5 +1,5 @@
-﻿using BLL.ServicesContracts;
-using DAL.Entities;
+﻿using BLL.DTOs;
+using BLL.ServicesContracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.Controllers
@@ -23,7 +23,7 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] Application application)
+        public async Task<IActionResult> Add([FromBody] ApplicationDto application)
         {
             var createdApp = await _applicationService.AddApplicationAsync(application);
             return createdApp != null ? CreatedAtAction(nameof(GetAll), new { }, createdApp) : BadRequest();

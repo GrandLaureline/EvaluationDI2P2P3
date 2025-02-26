@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "application",
-        "Type": "DAL.Entities.Application",
+        "Type": "BLL.DTOs.ApplicationDto",
         "IsRequired": true
       }
     ],
