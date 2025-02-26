@@ -1,14 +1,14 @@
-﻿using DAL.Entities;
+﻿using BLL.DTOs;
 
 namespace BLL.ServicesContracts
 {
     public interface IPasswordService
     {
-        Task<IEnumerable<Password>> GetPasswordsAsync();
+        Task<IEnumerable<PasswordDto>> GetPasswordsAsync();
 
-        Task<Password?> GetPasswordByIdAsync(int id);
+        Task<PasswordDto?> GetPasswordByIdAsync(int id);
 
-        Task<Password?> AddPasswordAsync(Password password);
+        Task<PasswordDto?> AddPasswordAsync(PasswordDto password);
 
         Task DeletePasswordAsync(int id);
     }

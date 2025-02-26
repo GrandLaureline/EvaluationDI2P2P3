@@ -45,7 +45,7 @@
     "Parameters": [
       {
         "Name": "password",
-        "Type": "DAL.Entities.Password",
+        "Type": "BLL.DTOs.PasswordDto",
         "IsRequired": true
       },
       {

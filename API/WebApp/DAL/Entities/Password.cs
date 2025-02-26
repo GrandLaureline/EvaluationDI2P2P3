@@ -3,11 +3,8 @@
     public class Password
     {
         public int Id { get; set; }
-        /// <summary>
-        /// Contient le mot de passe chiffré.
-        /// </summary>
-        public string Value { get; set; } = string.Empty;
-        public string NomCompte {  get; set; } = string.Empty;
+        public required string Value { get; set; }
+        public required string NomCompte {  get; set; }
         public int ApplicationId { get; set; }
         public Application? Application { get; set; }
     }

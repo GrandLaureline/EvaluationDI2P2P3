@@ -39,7 +39,19 @@ builder.Services.AddScoped<IPasswordRepository, PasswordRepository>();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigin");
 
 // Configuration de Swagger
 if (app.Environment.IsDevelopment())
@@ -57,6 +69,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-app.MapControllers(); // Aucun argument ici, il n'est plus nécessaire d'ajouter le filtre ici
+app.MapControllers();
 
 app.Run();

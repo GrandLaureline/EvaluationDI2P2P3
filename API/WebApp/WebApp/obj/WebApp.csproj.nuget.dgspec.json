@@ -169,7 +169,6 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Laureline\\Documents\\DIIAGE 2\\Projet 2-3\\Eval\\API\\WebApp\\WebApp\\NuGet.Config",
           "C:\\Users\\Laureline\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -179,7 +178,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/DI2-P2-G1/_packaging/DI2-P2-G1/nuget/v3/index.json": {}
         },
