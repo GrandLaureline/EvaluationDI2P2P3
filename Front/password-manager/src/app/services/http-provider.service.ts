@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { ApiService } from './api.service';
 import { passwordForm } from '../components/add-password/add-password.component';
-import { applicationForm } from '../components/add-password/add-password.component';
+import { applicationForm } from '../components/application-list/application-list.component';
 
 const apiUrl = environment.apiUrl;
 

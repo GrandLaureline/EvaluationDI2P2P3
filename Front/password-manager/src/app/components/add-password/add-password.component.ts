@@ -11,13 +11,6 @@ export class AddPasswordComponent {
 
 }
 
-export class applicationForm {
-  Name: string = "";
-  Description: string = "";
-  Link: string = "";
-  Icon: string = "";
-}
-
 export class passwordForm {
   Name: string = "";
   Description: string = "";

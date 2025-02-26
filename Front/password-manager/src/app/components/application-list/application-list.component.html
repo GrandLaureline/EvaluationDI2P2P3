@@ -6,6 +6,7 @@
         <tr>
           <th>Nom</th>
           <th>Type</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -13,6 +14,20 @@
           <td>{{ application.name }}</td>
           <td>{{ application.type }}</td>
         </tr>
+        <tr>
+            <td>
+              <input type="text" [(ngModel)]="newApplication.name" placeholder="Nom de l'application">
+            </td>
+            <td>
+              <select [(ngModel)]="newApplication.type">
+                <option value="GrandPublic">Grand public</option>
+                <option value="Professionnelle">Professionnelle</option>
+              </select>
+            </td>
+            <td>
+              <button (click)="addApplication()">Ajouter</button>
+            </td>
+          </tr>
       </tbody>
     </table>
 
