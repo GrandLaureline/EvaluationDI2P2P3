@@ -11,7 +11,8 @@ namespace BLL.Strategies
         {
             _rsa = RSA.Create();
             // Charger la clé publique
-            _rsa.ImportFromPem(File.ReadAllText("publicKey.pem"));
+            var publicKeyPath = Path.Combine(Directory.GetCurrentDirectory(), "publicKey.pem");
+            _rsa.ImportFromPem(File.ReadAllText(publicKeyPath));
         }
 
         public string Encrypt(string plainText)
