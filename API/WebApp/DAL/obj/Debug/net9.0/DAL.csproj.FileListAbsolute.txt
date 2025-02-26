@@ -1,0 +1,15 @@
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\DAL\obj\Debug\net9.0\ref\DAL.dll
