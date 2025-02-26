@@ -1,5 +1,6 @@
 using BLL.Services;
 using BLL.ServicesContracts;
+using BLL.Strategies;
 using DAL;
 using DAL.Repositories;
 using DAL.RepositoriesContracts;
@@ -25,6 +26,10 @@ builder.Services.AddControllers(options =>
 // Services de l'application
 builder.Services.AddScoped<IApplicationService, ApplicationService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
+builder.Services.AddScoped<IEncryptionService, EncryptionService>();
+builder.Services.AddScoped<IEncryptionStrategy, AesEncryptionStrategy>();
+builder.Services.AddScoped<IEncryptionStrategy, RsaEncryptionStrategy>();
+
 
 // Repositories
 builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();

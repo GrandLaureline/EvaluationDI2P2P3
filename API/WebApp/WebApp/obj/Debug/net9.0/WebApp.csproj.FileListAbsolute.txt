@@ -172,4 +172,3 @@ C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\WebApp\bin\Debu
 C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\WebApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\WebApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\WebApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Laureline\Documents\DIIAGE 2\Projet 2-3\Eval\API\WebApp\WebApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

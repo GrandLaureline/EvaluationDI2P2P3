@@ -47,6 +47,11 @@
         "Name": "password",
         "Type": "DAL.Entities.Password",
         "IsRequired": true
+      },
+      {
+        "Name": "appType",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
