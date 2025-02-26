@@ -23,8 +23,8 @@ export class HttpProviderService {
     return this.apiService.get(httpLink.passwords)
   }
 
-  public savePassword(model: passwordForm): Observable<any> {
-    return this.apiService.post(httpLink.passwords, model)
+  public savePassword(model: passwordForm, appType: string): Observable<any> {
+    return this.apiService.post(`${httpLink.passwords}?appType=${appType}`, model)
   }
 
   public deletePassword(id: any): Observable<any> {
