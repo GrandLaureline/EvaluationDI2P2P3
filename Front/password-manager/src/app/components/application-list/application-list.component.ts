@@ -1,21 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpProviderService } from '../../services/http-provider.service';
 
 @Component({
   selector: 'app-application-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './application-list.component.html',
   styleUrl: './application-list.component.scss'
 })
 export class ApplicationListComponent implements OnInit {
+  applicationGroup: FormGroup;
   applications: any[] = [];
   errorMessage: string | null = null;
-  newApplication = { name: '', type: 'GrandPublic' };
 
-  constructor(private httpProvider: HttpProviderService) {}
+  constructor(private httpProvider: HttpProviderService, private fb: FormBuilder) {
+    this.applicationGroup = this.fb.group({
+      name:['', Validators.required],
+      type:['GrandPublic', Validators.required],
+    })
+  }
 
   ngOnInit() {
     this.fetchApplications();
@@ -40,22 +45,27 @@ export class ApplicationListComponent implements OnInit {
   }
 
   addApplication() {
-    if (!this.newApplication.name.trim()) {
-      this.errorMessage = 'Le nom de l\'application est requis.';
-      return;
-    }
+    if (this.applicationGroup.valid){
+      const name = this.applicationGroup.get("name")?.value;
+      const type = this.applicationGroup.get("type")?.value;
 
-    this.httpProvider.saveApplication(this.newApplication).subscribe(
-      (response) => {
-        this.applications.push(response);
-        this.newApplication = { name: '', type: 'GrandPublic' };
-        this.errorMessage = null;
-      },
-      (error) => {
-        this.errorMessage = 'Erreur lors de l\'ajout de l\'application.';
-        console.error(error);
+      let newApplication = {
+        name: name,
+        type: type
       }
-    );
+
+      this.httpProvider.saveApplication(newApplication).subscribe(
+        (response) => {
+          this.applications.push(response);
+          this.errorMessage = null;
+          this.applicationGroup.get("name")?.reset();
+        },
+        (error) => {
+          this.errorMessage = 'Erreur lors de l\'ajout de l\'application.';
+          console.error(error);
+        }
+      );
+    }
   }
 }
 

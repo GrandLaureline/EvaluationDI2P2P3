@@ -1,6 +1,6 @@
 <div class="application-list">
     <h2>Liste des applications</h2>
-
+    <form [formGroup]="applicationGroup">
     <table *ngIf="applications.length > 0; else noApplication">
       <thead>
         <tr>
@@ -15,11 +15,12 @@
           <td>{{ application.type }}</td>
         </tr>
         <tr>
+
             <td>
-              <input type="text" [(ngModel)]="newApplication.name" placeholder="Nom de l'application">
+              <input type="text" formControlName="name" placeholder="Nom de l'application">
             </td>
             <td>
-              <select [(ngModel)]="newApplication.type">
+              <select formControlName="type">
                 <option value="GrandPublic">Grand public</option>
                 <option value="Professionnelle">Professionnelle</option>
               </select>
@@ -27,10 +28,11 @@
             <td>
               <button (click)="addApplication()">Ajouter</button>
             </td>
+
           </tr>
       </tbody>
     </table>
-
+  </form>
     <ng-template #noApplication>
       <p>Aucune application enregistrée.</p>
     </ng-template>
